@@ -5,4 +5,11 @@ let action = ['ate','peed','crushed','broke'];
 let what = ['my homework', 'the keys', 'the car'];
 let when = ['before the class','right on time','when I finished','during my lunch','while I was praying'];
 
+let theDog = Math.floor(Math.random() * who.length);
+let ate = Math.floor(Math.random() * action.length);
+let myHomework = Math.floor(Math.random() * what.length);
+let beforeTheClass = Math.floor (Math.random() * when.length);
+
+let reason= who[theDog] +' '+ action[ate] +' '+ what[myHomework] +' '+ when[beforeTheClass];
+document.querySelector('.excuses').innerHTML= reason
 }
